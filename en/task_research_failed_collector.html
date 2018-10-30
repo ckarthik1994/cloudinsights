@@ -2,7 +2,7 @@
 <!--[if IE 9]>         <html class="ie9"> <![endif]-->
 <!--[if gt IE 9]><!--> <html>         <!--<![endif]-->
   <head>
-  <title>Researching a failed data collector | NetApp Cloud Docs</title>
+  <title> | NetApp Cloud Docs</title>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +14,7 @@
 
   
 
-  <meta name="description" content="Data collector errors need to be researched and corrected to ensure continued collection of data.">
+  <meta name="description" content="Data collector errors need to be researched and corrected to ensure the continued collection of data.">
   <meta name="keywords" content=" data collector, changes, failures">
 
   <!-- Icons -->
@@ -886,21 +886,22 @@
           
 
 <div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Researching a failed data collector
+  <h1 class="n-doc__component-detail-heading">
     <span>
       
         <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/blob/master/task_research_failed_collector.adoc" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit on GitHub</a>
-        <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/issues/new?body=Page%3A%20[Researching a failed data collector](https://docs.netapp.com/en/cloudinsights/task_research_failed_collector.html)" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Request doc changes</a>
+        <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/issues/new?body=Page%3A%20[](https://docs.netapp.com/en/cloudinsights/task_research_failed_collector.html)" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Request doc changes</a>
       
     </span>
   </h1>
 </div>
 
 <div class="paragraph lead">
-<p>If a data collector has a failure message, you can research the problem using the data collector page with its linked information.</p>
+<p>If a data collector has failure message and a High or Medium Impact, you need to research this problem using the data collector summary page with its linked information.</p>
 </div>
+<h1 id="researching-a-failed-data-collector" class="sect0">Researching a failed data collector</h1>
 <div class="paragraph">
-<p>Use the following steps to determine the cause of a failed data collector. Data Collector failures are noted on the <strong>Admin</strong> menu and on the <strong>Installed Data Collectors</strong> page as a number highlighted in red, indicating the number of failures.</p>
+<p>Use the following steps to determine the cause of failed data collectors. Data collector failure messages are displayed on the <strong>Admin</strong> menu and on the <strong>Installed Data Collectors</strong> page.</p>
 </div>
 <div class="olist arabic">
 <div class="title">Steps</div>
@@ -909,28 +910,28 @@
 <p>Click <strong>Admin</strong> &gt; <strong>Data Collectors</strong> &gt; <strong>Installed Data Collectors</strong>.</p>
 </li>
 <li>
-<p>Click the linked Name of the failing data collector to open the Data Collector&#8217;s <strong>Summary</strong> page.</p>
+<p>Click the linked Name of the failing data collector to open the Summary page.</p>
 </li>
 <li>
-<p>On the Summary page, check the <strong>Comments</strong> area to read any notes left by another engineer who might also be investigating this failure.</p>
+<p>On the Summary page, check the Comments area to read any notes that might have been left by another engineer who might also be investigating this failure.</p>
 </li>
 <li>
 <p>Note any performance messages.</p>
 </li>
 <li>
-<p>Move your mouse pointer over the segments of the <strong>Event Timeline</strong> graph to display additional information.</p>
+<p>Move your mouse pointer over the segments of the Event Timeline graph to display additional information.</p>
 </li>
 <li>
-<p>Select an error message for a Device displayed below the Event Timeline, and click the <strong>Error Details</strong> link that displays to the right of the message.</p>
+<p>Select an error message for a Device and displayed below the Event Timeline and click the Error details icon that displays to the right of the message.</p>
 <div class="paragraph">
-<p>The Error Details includes the text of the error message, most likely causes, information in use, and suggestions of what can be tried to correct the problem.</p>
+<p>The Error details include the text of the error message, most likely causes, information in use, and suggestions of what can be tried to correct the problem.</p>
 </div>
 </li>
 <li>
-<p>In the <strong>Devices Reported By This Data Collector</strong> area, you can filter the list to display only devices of interest, and you can click the linked <strong>Name</strong> of a device to display the asset page for that device.</p>
+<p>In the Devices Reported By This Data Collector area, you might filter the list to display only devices of interest, and you can click the linked <strong>Name</strong> of a device to display the asset page for that device.</p>
 </li>
 <li>
-<p>When you return to the data collector summary page, check the <strong>Most Recent Changes</strong> area at the bottom of the page to see if recent changes could have caused the problem.</p>
+<p>When you return to the data collector summary page, check the <strong>Show Recent Changes</strong> area at the bottom of the page to see if recent changes could have caused the problem.</p>
 </li>
 </ol>
 </div>
