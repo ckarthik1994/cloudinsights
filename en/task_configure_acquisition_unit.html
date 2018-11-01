@@ -902,7 +902,7 @@
 <p>Cloud Insights collects device data using one or more Acquisition Units installed on local servers. Each Acquisition Unit can host multiple Data Collectors, which send device metrics to Cloud Insights for analysis.</p>
 </div>
 <div class="paragraph">
-<p>This procedure describes how to add Acquisition Units and describes additional steps required when your environment uses a proxy.</p>
+<p>This topic describes how to add Acquisition Units and describes additional steps required when your environment uses a proxy.</p>
 </div>
 </div>
 </div>
@@ -929,10 +929,16 @@
 <li>
 <p>Click <strong>Admin &gt; Data Collectors &gt; Acquisition Units &gt; +Acquisition Unit</strong></p>
 <div class="paragraph">
-<p>The system displays the <em>Add Acquisition Unit</em> dialog.<br>
-image:add_acq_linux</p>
+<p>The system displays the <em>Add Acquisition Unit</em> dialog.</p>
 </div>
 </li>
+</ol>
+</div>
+<div class="paragraph">
+<p>image::add_acq_linux.png</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Verify that the server or VM hosting the Acquisition Unit meets the minimum system requirements.</p>
 </li>
@@ -947,41 +953,8 @@ image:add_acq_linux</p>
 </li>
 <li>
 <p>Execute the command in the Bash shell.</p>
-<div class="literalblock">
-<div class="content">
-<pre>== Setting proxy environment variables</pre>
-</div>
-</div>
 </li>
 </ol>
-</div>
-<div class="paragraph">
-<p>For environments that use a proxy, you must set the proxy environment variables before you add the Acquisition Unit. The instructions for configuring the proxy are provided on the <em>Add Acquisition Unit</em>  dialog.</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Click + in Have a Proxy Server?</p>
-</li>
-<li>
-<p>Copy the commands to a text editor and set your proxy variables as needed.</p>
-</li>
-<li>
-<p>Run the edited command in a terminal.</p>
-</li>
-<li>
-<p>Install the Acquisition Unit software.</p>
-</li>
-<li>
-<p>Copy the Installation command displayed in the dialog into a terminal window on the server or VM that will host the Acquisition unit.</p>
-</li>
-<li>
-<p>Execute the command in the Bash shell.</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>The command contains a key unique to your environment that is good for 24 hours and for a single Acquisition Unit only.</p>
 </div>
 <div class="ulist">
 <div class="title">After you finish</div>
@@ -991,6 +964,26 @@ image:add_acq_linux</p>
 </li>
 <li>
 <p>You can access the Acquisition Unit logs at /var/log/netapp/cloudinsights/acq/acq.log</p>
+</li>
+<li>
+<p>Use the following script to control the Acquisition Unit:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>cloudinsights-service.sh (stop, start, restart, check the status)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Use the following script to uninstall the Acquisition Unit:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>cloudinsights-uninstall.sh</p>
+</li>
+</ul>
+</div>
 </li>
 </ul>
 </div>
