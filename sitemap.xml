@@ -211,7 +211,7 @@
     <url>
       <loc>https://docs.netapp.com/zz/cloudinsights//search.html</loc>
       
-        <lastmod>2018-11-01T17:35:06+00:00</lastmod>
+        <lastmod>2018-11-01T17:39:03+00:00</lastmod>
       
     </url>
   
@@ -695,6 +695,13 @@
       <loc>https://docs.netapp.com/zz/cloudinsights/task_h2_minrisk_thin.html</loc>
       
         <lastmod>2018-10-18T20:19:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zz/cloudinsights/task_h2_perf_policy.html</loc>
+      
+        <lastmod>2018-10-31T20:03:16+00:00</lastmod>
       
     </url>
   
