@@ -929,41 +929,51 @@
 <li>
 <p>Click <strong>Admin &gt; Data Collectors &gt; Acquisition Units &gt; +Acquisition Unit</strong></p>
 <div class="paragraph">
-<p>The system displays the <em>Add Acquisition Unit</em> dialog.</p>
+<p>The system displays the <em>Add Acquisition Unit</em> dialog.<br>
+image:add_acq_linux</p>
 </div>
 </li>
-<li>
-<p>Verify the the requirements listed in Step 1 are met.</p>
-</li>
-<li>
-<p>Select the Acquisition unit for Linux or Windows.<br>
-+ Note that you need an unzip program for this download.</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="./media/AddAcqDialog.png" alt="Add Acquisition Unit dialog"></span></p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Click <strong>Linux</strong></p>
-<div class="ulist">
-<ul>
 <li>
 <p>Verify that the server or VM hosting the Acquisition Unit meets the minimum system requirements.</p>
 </li>
 <li>
-<p>Verify that the server is running a supported version of Linux.</p>
+<p>Verify that the server is running a supported version of Linux, click <em>Versions Supported (i)</em>.</p>
 </li>
-</ul>
-</div>
+<li>
+<p>Click <strong>LINUX</strong></p>
 </li>
 <li>
 <p>Copy the Installation command displayed in the dialog into a terminal window on the server or VM that will host the Acquisition unit.</p>
-<div class="paragraph">
-<p>You can click on the <em>Copy to Clipboard</em> icon to easily copy the command from the dialog.</p>
+</li>
+<li>
+<p>Execute the command in the Bash shell.</p>
+<div class="literalblock">
+<div class="content">
+<pre>== Setting proxy environment variables</pre>
 </div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>For environments that use a proxy, you must set the proxy environment variables before you add the Acquisition Unit. The instructions for configuring the proxy are provided on the <em>Add Acquisition Unit</em>  dialog.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click + in Have a Proxy Server?</p>
+</li>
+<li>
+<p>Copy the commands to a text editor and set your proxy variables as needed.</p>
+</li>
+<li>
+<p>Run the edited command in a terminal.</p>
+</li>
+<li>
+<p>Install the Acquisition Unit software.</p>
+</li>
+<li>
+<p>Copy the Installation command displayed in the dialog into a terminal window on the server or VM that will host the Acquisition unit.</p>
 </li>
 <li>
 <p>Execute the command in the Bash shell.</p>
@@ -980,7 +990,7 @@
 <p>Click <strong>Admin &gt; Data Collectors &gt; Acquisition units</strong> to check the status of Acquisition Units.</p>
 </li>
 <li>
-<p>You can access the Acquisition Unit logs at /var/netapp/cloudinsights/acq/acq.log</p>
+<p>You can access the Acquisition Unit logs at /var/log/netapp/cloudinsights/acq/acq.log</p>
 </li>
 </ul>
 </div>
@@ -1007,22 +1017,6 @@
 <p>Install the Acquisition Unit software.</p>
 </li>
 </ol>
-</div>
-<div class="ulist">
-<div class="title">After you finish</div>
-<ul>
-<li>
-<p>Continue with the installation of your Windows or Linux Acquisition Unit</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="installing-a-windows-acquisition-unit">Installing a Windows Acquisition Unit</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Instructions coming soon.</p>
 </div>
 </div>
 </div>
