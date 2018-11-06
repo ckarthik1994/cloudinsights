@@ -950,8 +950,12 @@
 <div class="paragraph">
 <p>Note: These are common terminology mappings only and might not represent every case for this data collector.</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="inventory-requirements">Inventory Requirements</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<div class="title">Before you begin</div>
 <p>You must have the following in order to collect inventory data:</p>
 </div>
 <div class="ulist">
@@ -961,6 +965,15 @@
 </li>
 <li>
 <p>Read-only user name and password for the HiCommand Device Manager software and peer privileges</p>
+</li>
+<li>
+<p>Port requirements: 2001 (http) or 2443 (https)</p>
+</li>
+<li>
+<p>Log into HiCommand Device Manager software using username and password</p>
+</li>
+<li>
+<p>Verify access to HiCommand Device Manager <a href="http://&lt;HDS" class="bare">http://&lt;HDS</a> HiCommand Device Manager IP Address&gt;:2001/service/StorageManager</p>
 </li>
 </ul>
 </div>
@@ -997,6 +1010,9 @@
 <p>AMS performance:</p>
 <div class="ulist">
 <ul>
+<li>
+<p>NetApp strongly recommends creating a dedicated service account on AMS arrays for Cloud Insights to use to retrieve performance data. Storage Navigator only allows a user account one concurrent login to the array. Having Cloud Insights use the same user account as management scripts or HiCommand may result in Cloud Insights, management scripts, or HiCommand being unable to communicate to the array due to the one concurrent user account login limit</p>
+</li>
 <li>
 <p>Performance Monitor must be licensed.</p>
 </li>
@@ -1066,7 +1082,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tuning Manager Port</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Port used for Tuning Manager</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Port used for Tuning Manager (Default is 22015)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tuning Manager Username</p></td>

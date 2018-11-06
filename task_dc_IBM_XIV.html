@@ -2,7 +2,7 @@
 <!--[if IE 9]>         <html class="ie9"> <![endif]-->
 <!--[if gt IE 9]><!--> <html>         <!--<![endif]-->
   <head>
-  <title>IBM XIV data collector | NetApp Cloud Docs</title>
+  <title> | NetApp Cloud Docs</title>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -886,11 +886,11 @@
           
 
 <div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">IBM XIV data collector
+  <h1 class="n-doc__component-detail-heading">
     <span>
       
         <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/blob/master/task_dc_IBM_XIV.adoc" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit on GitHub</a>
-        <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/issues/new?body=Page%3A%20[IBM XIV data collector](https://docs.netapp.com/zz/cloudinsights/task_dc_IBM_XIV.html)" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Request doc changes</a>
+        <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/issues/new?body=Page%3A%20[](https://docs.netapp.com/zz/cloudinsights/task_dc_IBM_XIV.html)" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Request doc changes</a>
       
     </span>
   </h1>
@@ -899,7 +899,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>IBM XIV (CLI) data collector uses the XIV command-line interface to collect inventory data while performance collection is accomplished by making SMI-S calls to the XIV array, which runs a SMI-S provider on port 5989.</p>
+<p>IBM XIV (CLI) data collector uses the XIV command-line interface to collect inventory data while performance collection is accomplished by making SMI-S calls to the XIV array, which runs a SMI-S provider on port 7778.</p>
 </div>
 </div>
 </div>
@@ -923,15 +923,23 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">Disk</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vendor/Model Term</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud Insights Term</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Disk</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Disk</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Storage System</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Storage</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Storage Pool</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Storage Pool</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Volume</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Storage Pool</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Volume</p></td>
 </tr>
 </tbody>
@@ -947,7 +955,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p>Port requirement: TCP port 5989</p>
+<p>Port requirement: TCP port 7778</p>
 </li>
 <li>
 <p>Read-only user name and password</p>
@@ -955,9 +963,35 @@
 <li>
 <p>The XIV CLI must be installed on the AU</p>
 </li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="performance-requirements">Performance requirements</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following are requirements for performance collection:</p>
+</div>
+<div class="ulist">
+<ul>
 <li>
-<p>Access validation: Log in to the XIV user interface from the AU<br>
-using the user name and password.</p>
+<p>SMI-S Agent 1.4 or higher</p>
+</li>
+<li>
+<p>SMI-S compatible CIMService running on array.  Most XIV arrays have a CIMServer installed by default.</p>
+</li>
+<li>
+<p>User login must be provided for the CIMServer.  The login must have full read access to the array configuration and properties.</p>
+</li>
+<li>
+<p>SMI-S namespace.  Default is root/ibm.  This is configurable in the CIMServer.</p>
+</li>
+<li>
+<p>Port Requirements: 5988 for HTTP, 5989 for HTTPS.</p>
+</li>
+<li>
+<p>Refer to the following link on how to create an account for SMI-S performance collection: <a href="http://publib.boulder.ibm.com/infocenter/tivihelp/v4r1/index.jsp?topic=%2Fcom.ibm.tpc_V41.doc%2Ffqz0_t_adding_cim_agent.html" class="bare">http://publib.boulder.ibm.com/infocenter/tivihelp/v4r1/index.jsp?topic=%2Fcom.ibm.tpc_V41.doc%2Ffqz0_t_adding_cim_agent.html</a></p>
 </li>
 </ul>
 </div>
@@ -1043,12 +1077,15 @@ using the user name and password.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Password</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Password for the SMI-S Provider Host<br>
-Performance Poll Interval (sec)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Password for the SMI-S Provider Host</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Performance Poll Interval (sec)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Interval between performance polls.  The default is 300 seconds.</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Number of SMI-S Connection Retries</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of SMI-S connection retry attempts.</p></td>
 </tr>
 </tbody>
 </table>
