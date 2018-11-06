@@ -2,7 +2,7 @@
 <!--[if IE 9]>         <html class="ie9"> <![endif]-->
 <!--[if gt IE 9]><!--> <html>         <!--<![endif]-->
   <head>
-  <title>Solutions Enabler with SMI-S Performance data collector | NetApp Cloud Docs</title>
+  <title>Dell EMC VMAX Family of Devices data collector | NetApp Cloud Docs</title>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +14,7 @@
 
   
 
-  <meta name="description" content="Configuring DELL EMC VMAX data collector.">
+  <meta name="description" content="Configuring Dell EMC VMAX Family data collector.">
   <meta name="keywords" content=" data collector, Celerra, EMC, DELL">
 
   <!-- Icons -->
@@ -886,11 +886,11 @@
           
 
 <div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Solutions Enabler with SMI-S Performance data collector
+  <h1 class="n-doc__component-detail-heading">Dell EMC VMAX Family of Devices data collector
     <span>
       
         <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/blob/master/task_dc_emc_vmax.adoc" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit on GitHub</a>
-        <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/issues/new?body=Page%3A%20[Solutions Enabler with SMI-S Performance data collector](https://docs.netapp.com/en/cloudinsights/task_dc_emc_vmax.html)" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Request doc changes</a>
+        <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/issues/new?body=Page%3A%20[Dell EMC VMAX Family of Devices data collector](https://docs.netapp.com/en/cloudinsights/task_dc_emc_vmax.html)" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Request doc changes</a>
       
     </span>
   </h1>
@@ -907,7 +907,7 @@
 <h2 id="requirements">Requirements</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Before configuring this data source, you should ensure that Cloud Insights has TCP connectivity to port 2707 on the existing Solutions Enabler server. Cloud  Insights discovers all the Symmetrix arrays that are "Local" to this server, as seen in "symcfg list" output from that server.</p>
+<p>Before configuring this data collector, you should ensure that Cloud  Insights has TCP connectivity to port 2707 on the existing Solutions Enabler server. Cloud  Insights discovers all the Symmetrix arrays that are "Local" to this server, as seen in "symcfg list" output from that server.</p>
 </div>
 <div class="ulist">
 <ul>
@@ -940,7 +940,10 @@
 </div>
 </li>
 <li>
-<p>The UNISPHERE for VMAX application must be running and collecting statistics for the Symmetrix VMAX storage arrays that are managed by the SMI-S Provider installation.</p>
+<p>The UNISPHERE for VMAX application must be running and collecting statistics for the Symmetrix VMAX storage arrays that are managed by the SMI-S Provider installation</p>
+</li>
+<li>
+<p>Access validation: Verify that the SMI-S provider is running: telnet &lt;se_server&gt; 5988</p>
 </li>
 </ul>
 </div>
@@ -999,7 +1002,7 @@
 <h2 id="configuration">Configuration</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>Note:</strong> If SMI-S user authentication is not enabled, the default values in the Cloud Insights data source are ignored.</p>
+<p><strong>Note:</strong> If SMI-S user authentication is not enabled, the default values in the Cloud Insights data collector are ignored.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -1056,7 +1059,7 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">Connection Caching</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Choose connection caching method:<br>
 <br>
-* LOCAL means that the Cloud Insights Acquisition service is running on the Solutions Enabler server, which has Fibre Channel connectivity to the Symmetrix arrays you seek to discover, and has access to gatekeeper volumes. This might be seen in some Remote Acquisition Unit (RAU) configurations.<br>
+* LOCAL means that the Cloud  Insights Acquisition service is running on the Solutions Enabler server, which has Fibre Channel connectivity to the Symmetrix arrays you seek to discover, and has access to gatekeeper volumes. This might be seen in some Remote Acquisition Unit (RAU) configurations.<br>
 * REMOTE_CACHED is the default and should be used in most cases. This uses the NETCNFG file settings to connect using IP to the Solutions Enabler server, which must have Fibre Channel connectivity to the Symmetrix arrays you seek to discover, and has access to Gatekeeper volumes.<br>
 * In the event that REMOTE_CACHED options make CLI commands fail, use the REMOTE option. Keep in mind that it will slow down the acquisition process (possibly to hours or even days in extreme cases). The NETCNFG file settings are still used for an IP connection to the Solutions Enabler server that has Fibre Channel connectivity to the Symmetrix arrays being discovered.<br>
 <br>
