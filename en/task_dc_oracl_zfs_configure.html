@@ -907,7 +907,7 @@
 <h2 id="terminology">Terminology</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Cloud Insights acquires inventory information with the Oracle ZFS data collector. For each asset type acquired by Cloud Insights, the most common terminology used for this asset is shown. When viewing or troubleshooting this data collector, keep the following terminology in mind:</p>
+<p>Cloud Insights acquires inventory information with the ceph data collector. For each asset type acquired by Cloud Insights, the most common terminology used for this asset is shown. When viewing or troubleshooting this data collector, keep the following terminology in mind:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -934,7 +934,7 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">Storage Node</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Volume</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LUN</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Volume</p></td>
 </tr>
 <tr>
@@ -945,10 +945,14 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">Initiator,Target</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Volume Mask</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Share</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Internal Volume</p></td>
+</tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Note: These are common terminology mappings only and might not represent every case for this data collector.</p>
+<p>Note: These are common terminology mappings only and might not represent every case for this data source.</p>
 </div>
 </div>
 </div>
@@ -962,6 +966,9 @@
 </li>
 <li>
 <p>Administrator user name and password</p>
+</li>
+<li>
+<p>Port requirement: 215 HTTP/HTTPS</p>
 </li>
 </ul>
 </div>
@@ -1019,7 +1026,7 @@
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">TCP port</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">215</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The default is 215</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Connection type</p></td>
@@ -1027,7 +1034,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Inventory poll interval</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The default is 60 seconds</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The default is port 60 seconds</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Connection Timeout (sec)</p></td>
@@ -1035,7 +1042,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Performance Poll Interval (sec)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The default is 300 seconds.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The default is 300.</p></td>
 </tr>
 </tbody>
 </table>

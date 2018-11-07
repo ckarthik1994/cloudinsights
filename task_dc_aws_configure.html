@@ -901,8 +901,12 @@
 <div class="paragraph lead">
 <p>Cloud Insights uses the Amazon EC2 data collector to acquire inventory and performance data from EC2 instances.</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="requirements">Requirements</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<div class="title">Before you begin</div>
 <p>In order to collect data from Amazon EC2 devices, you must have the following information:</p>
 </div>
 <div class="ulist">
@@ -913,13 +917,16 @@
 <li>
 <p>You must have the Secret Access Key for your Amazon EC2 cloud account</p>
 </li>
+<li>
+<p>Port 433 HTTPS</p>
+</li>
+<li>
+<p>EC2 Instances can be reported as a Virtual Machine, or (less naturally) a Host. EBS Volumes can be reported as both a VirtualDisk used by the VM, as well as a DataStore providing the Capacity for the VirtualDisk.</p>
+</li>
 </ul>
 </div>
 <div class="paragraph">
-<p>Access keys consist of an access key ID (for example, AKIAIOSFODNN7EXAMPLE) and a secret access key (for example, wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY). You use access keys to sign programmatic requests that you make to EC@ if you use the Amanzon EC2 SDKs, REST, or Query API operations.</p>
-</div>
-<div class="paragraph">
-<p>These keys are provided with your contract from Amazon.</p>
+<p>Access keys consist of an access key ID (for example, AKIAIOSFODNN7EXAMPLE) and a secret access key (for example, wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY). You use access keys to sign programmatic requests that you make to EC@ if you use the Amanzon EC2 SDKs, REST, or Query API operations. These keys are provided with your contract from Amazon.</p>
 </div>
 </div>
 </div>
