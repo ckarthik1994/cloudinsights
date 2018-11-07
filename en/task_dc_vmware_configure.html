@@ -948,29 +948,48 @@
 </tbody>
 </table>
 <div class="paragraph">
-<p><strong>Note</strong><br>
- These are common terminology mappings only and might not represent every case for this data collector.</p>
+<p>These are common terminology mappings only and might not represent every case for this data collector.</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="requirements">Requirements</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<div class="title">Before you begin</div>
 <p>The following information is required to configure this data collector:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Virtual Center IP Address</p>
+<p>IP address of the Virtual Center server</p>
 </li>
 <li>
-<p>User Name and Password used to access the Virtual Center</p>
+<p>Read-only username and password in Virtual Center</p>
 </li>
 <li>
-<p>Read-only privileges on all objects within the Virtual Center.</p>
+<p>We require read only privileges on all objects within Virtual Center.</p>
 </li>
 <li>
-<p>SDK access on the Virtual Center server</p>
+<p>SDK access on the Virtual Center server – normally already setup.</p>
 </li>
 <li>
-<p>Verify that the SDK is enabled by entering telnet &lt;vc_ip&gt; 443.</p>
+<p>3rd party software installed on OnCommand Insight Server / RAU: none</p>
+</li>
+<li>
+<p>Port requirements: http-80 https-443</p>
+</li>
+<li>
+<p>Validate access:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Log into Virtual Center Client using above username and password</p>
+</li>
+<li>
+<p>Verify SDK enabled: telnet &lt;vc_ip&gt; 443</p>
+</li>
+</ul>
+</div>
 </li>
 </ul>
 </div>

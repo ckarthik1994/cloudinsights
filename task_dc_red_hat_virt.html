@@ -922,28 +922,24 @@
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Disk (SSD)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Disk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Virtual Disk</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Cluster</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Storage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Host</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Host</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Controller</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Storage Node</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Virtual Machine</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Virtual Machine</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Volume</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Volume</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Storage Domain</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data Store</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">LUN Map</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Volume Map</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Initiator,Target</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Volume Mask</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Logical Unit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LUN</p></td>
 </tr>
 </tbody>
 </table>
@@ -958,13 +954,13 @@
 <div class="ulist">
 <ul>
 <li>
-<p>RHEV Server IP Address</p>
+<p>IP address of the RHEV server over port 443 via REST API</p>
 </li>
 <li>
-<p>User name</p>
+<p>Read-only username and password</p>
 </li>
 <li>
-<p>Password</p>
+<p>RHEV Version 3.0+</p>
 </li>
 </ul>
 </div>
@@ -1018,19 +1014,15 @@
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">HTTPS Communication Port</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">443</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Connection type</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Choose HTTP or HTTPS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Port used for HTTPS communication to RHEV</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Inventory poll interval (min)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The default is 20 minutes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The default is 20 minutes.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Connection Timeout (sec)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The default is 60</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The default is 60.</p></td>
 </tr>
 </tbody>
 </table>

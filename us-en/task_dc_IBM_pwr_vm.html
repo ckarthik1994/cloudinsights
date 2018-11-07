@@ -957,13 +957,19 @@
 <div class="ulist">
 <ul>
 <li>
-<p>User name and password that provide access to HMC through SSH</p>
+<p>IP address of the Hardware Management Console (HMC)</p>
+</li>
+<li>
+<p>User name and password that provide access to Hardware Management Console (HMC) through SSH</p>
 </li>
 <li>
 <p>View permission on all management systems and logical partition security domains</p>
 <div class="paragraph">
 <p>The user must also have View permission on HMC configurations and the ability to collect VPD information for the HMC console security grouping. The user must also be allowed Virtual IO Server Command access under the Logical Partition security grouping. It is a best practice to start from a role of an operator and then remove all roles. Read-only users on the HMC do not have privileges to run proxied commands on AIX hosts.</p>
 </div>
+</li>
+<li>
+<p>Port requirement SSH-22</p>
 </li>
 </ul>
 </div>
