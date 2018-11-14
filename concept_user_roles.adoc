@@ -38,6 +38,9 @@ Best practice is to limit the number of users with Administrator permissions.  T
 
 Creating a new user account is achieved through Cloud Central. A user can respond to the invitation sent through email, but if the user does not have an account with Cloud Central, the user needs to sign up with Cloud Central so that they can accept the invitation.
 
+NOTE: Be sure the @netapp.com domain is whitelisted in your users' spam filters. If they do not receive the email, they should check their junk or spam folders.
+
+
 .Before you begin
 
 * The user name is the email address of the invitation.
