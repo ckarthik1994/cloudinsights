@@ -74,6 +74,21 @@ For more detailed explanations of these and other Dashboard Features, link:conce
 
 // For example dashboards, link:TBD.html[click here].
 
+== Importing from the Dashboard Gallery
+
+Cloud Insights provides a number of *Recommended Dashboards* relevant to the data collector types you have installed. Each dashboard contains widgets designed to present data provided by the data collector type (for example, storage, virtual machine, etc.).
+
+To import a dashboard from the gallery, do the following:
+
+. Select *Dashboard > Show all Dashboards*
+. Click on *+From Gallery*
++
+A list of *Recommended Dashboards* is displayed, relevant to the currently-configured data collector types in your environment. Each displays the particular question the dashboard can help you solve.
+
+. Select one or more dashboards from the list and click *Add Dashboards*. These dashboards now show in your dashboard list.
+
+In addition to the Recommended Dashboards, you can also choose to import *Additional Dashboards* that are not relevant to your current data collectors. For example, if you have no storage data collectors currently installed but are planning on configuring some in the future, you may still choose to import the storage-relevant dashboards. These dashboards will be available for disp[lay but may not show any relevant data until a storage data collector in configured.
+
 == Setting a Dashboard as your Home Page
 
 You can choose which dashboard to set as your environment's *home page* using either of the following methods:
