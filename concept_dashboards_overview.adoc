@@ -76,14 +76,14 @@ For more detailed explanations of these and other Dashboard Features, link:conce
 
 == Importing from the Dashboard Gallery
 
-Cloud Insights provides a number of *Recommended Dashboards* relevant to the data collector types you have installed. Each dashboard contains widgets designed to present data provided by the data collector type (for example, storage, virtual machine, etc.).
+Cloud Insights provides a number of *Recommended Dashboards* to assist with providing targeted business insights and solving a range of business problems, such as cost reduction or asset utilization. The Recommended Dashboards list will display dashboards relevant to the data you are collecting. 
 
 To import a dashboard from the gallery, do the following:
 
 . Select *Dashboard > Show all Dashboards*
 . Click on *+From Gallery*
 +
-A list of *Recommended Dashboards* is displayed, relevant to the currently-configured data collector types in your environment. Each is named with a particular question the dashboard can help you solve.
+A list of *Recommended Dashboards* is displayed, relevant to the data being collected in your environment. Each is named with a particular insight or question the dashboard can help you solve.
 
 . Select one or more dashboards from the list and click *Add Dashboards*. These dashboards now show in your dashboard list.
 
