@@ -83,7 +83,7 @@ To import a dashboard from the gallery, do the following:
 . Select *Dashboard > Show all Dashboards*
 . Click on *+From Gallery*
 +
-A list of *Recommended Dashboards* is displayed, relevant to the currently-configured data collector types in your environment. Each displays the particular question the dashboard can help you solve.
+A list of *Recommended Dashboards* is displayed, relevant to the currently-configured data collector types in your environment. Each is named with a particular question the dashboard can help you solve.
 
 . Select one or more dashboards from the list and click *Add Dashboards*. These dashboards now show in your dashboard list.
 
