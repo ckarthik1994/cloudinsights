@@ -87,7 +87,7 @@ A list of *Recommended Dashboards* is displayed, relevant to the currently-confi
 
 . Select one or more dashboards from the list and click *Add Dashboards*. These dashboards now show in your dashboard list.
 
-In addition to the Recommended Dashboards, you can also choose to import *Additional Dashboards* that are not relevant to your current data collectors. For example, if you have no storage data collectors currently installed but are planning on configuring some in the future, you may still choose to import the storage-relevant dashboards. These dashboards will be available for disp[lay but may not show any relevant data until a storage data collector in configured.
+In addition to the Recommended Dashboards, you can also choose to import *Additional Dashboards* that are not relevant to your current data collectors. For example, if you have no storage data collectors currently installed but are planning on configuring some in the future, you may still choose to import the storage-relevant dashboards. These dashboards will be available for display but may not show any relevant data until a storage data collector in configured.
 
 == Setting a Dashboard as your Home Page
 
